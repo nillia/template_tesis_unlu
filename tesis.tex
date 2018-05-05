@@ -1,0 +1,34 @@
+\documentclass[a4paper,openright,12pt]{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Para agregar imágenes
+\usepackage{epigraph} % Para agregar epigrafes
+\usepackage{hyperref} % Para agregar enlaces (y referenciar en el índice)
+\setlength\epigraphrule{0pt}
+
+\usepackage{lipsum,blindtext} % Agregados para generar contenido de prueba
+
+\begin{document}
+\include{config}
+lala
+
+% Se incluyen las primeras secciones del documento.
+\include{secciones/1-caratula}
+\include{secciones/2-dedicatoria}
+\include{secciones/2-agradecimientos}
+\include{secciones/3-resumen}
+\include{secciones/4-indices}
+
+% Ahora se incluyen los capítulos
+\include{capitulos/1-introduccion}
+
+% Finalmente se incluye la bibliografía
+\include{secciones/bibliografia}
+
+% Se incluyen los apéndices
+\include{apendices/A-prueba}
+
+% Se incluye el fin del trabajo.
+\include{secciones/fin}
+
+\end{document}
