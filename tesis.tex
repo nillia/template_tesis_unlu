@@ -1,15 +1,20 @@
-\documentclass[a4paper,openright,12pt]{book}
+\documentclass[11pt,a4paper,twoside]{book}
+
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+
 \usepackage{graphicx} % Para agregar imágenes
 \usepackage{epigraph} % Para agregar epigrafes
+\usepackage{emptypage} % Limpia todos los estilos de las hojas en blanco
 \usepackage{hyperref} % Para agregar enlaces (y referenciar en el índice)
 \setlength\epigraphrule{0pt}
 
 \usepackage{lipsum,blindtext} % Agregados para generar contenido de prueba
 
-\begin{document}
+\include{recursos/estilos/cabeceras}
 \include{config}
+
+\begin{document}
 
 % Se incluyen las primeras secciones del documento.
 \include{secciones/1-caratula}

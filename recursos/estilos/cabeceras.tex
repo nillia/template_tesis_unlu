@@ -1,0 +1,25 @@
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\renewcommand{\sectionmark}[1]{\markright{\thesection. ~#1}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter. ~#1}{}}
+
+% Redefino el estilo plain para que en las primeras páginas de los capitulos
+% el nro de página esté en la esquina superior derecha.
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Creo el estilo principal a utilizar
+\fancypagestyle{main}{%
+  \fancyhf{}
+  \fancyhead[LE,RO]{\thepage}
+  \fancyhead[RE]{\leftmark}
+  \fancyhead[LO]{\rightmark}
+}
+
+\pagestyle{main}
